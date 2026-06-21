@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo-icon.ico" />
+    <title>CertiWeb - Car Certification</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>¡Hola, mundo!</h1>
-<p>Este es un archivo index.html básico.</p>
+<!-- Sección Hero -->
+<section class="hero">
+    <video class="hero-bg" autoplay loop muted playsinline>
+        <source src="Videos/carro.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="language-switch">
+        <button id="lang-switch-btn">
+            <span>English</span>
+        </button>
+    </div>
+    <div class="hero-content">
+        <img src="Images/logo.svg" alt="CertiWeb Logo" class="logo">
+        <h1 data-lang-es="Tu camino certificado hacia una venta de auto segura" data-lang-en="Your certified path to a safe car sale">Tu camino certificado hacia una venta de auto segura</h1>
+        <p data-lang-es="Deshágase del valor real de su vehículo con una certificación profesional. Venda más rápido, venda de forma más rentable." data-lang-en="Unlock the real value of your vehicle with a professional certification. Sell faster, sell more profitably.">Deshágase del valor real de su vehículo con una certificación profesional. Venda más rápido, venda de forma más rentable.</p>
+        <div class="btn-container">
+            <a href="  " class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-lang-es="Regístrate" data-lang-en="Sign Up">Regístrate</a>
+            <a href="#contacto" class="btn btn-secondary" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
