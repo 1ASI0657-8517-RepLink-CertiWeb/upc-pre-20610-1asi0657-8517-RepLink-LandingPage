@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #000000;
+    background-color: #D8CCB8;
+}
+
+/* ---- Utilidades ---- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #002d18;
+}
+
+.section-title-contact {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+/* ---- Language Switcher ---- */
+.language-switch {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+.language-switch button {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ---- Hero ---- */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-color: #002d18;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 0 auto 30px;
+    background-color: #f8f6ed;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fbb901;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #fbb901;
+    color: #002d18;
+}
+
+.btn-secondary {
+    background-color: #f8ecd6;
+    color: #002d18;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- Video Demo ---- */
+.demo-video {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.demo-video .section-title {
+    color: #002d18;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #f8f6ed;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.video-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ---- Features & About ---- */
+.features-about-grid {
+    padding: 80px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.grid-column {
+    padding: 1rem;
+}
+
+.grid-column p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.feature-icon {
+    font-size: 1.2rem;
+    min-width: 24px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.about-icon img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ---- Reviews ---- */
+.reviews {
+    padding: 80px 0;
+    background-color: #C3CCC7;
+    color: #ffffff;
+}
+
+.reviews .section-title {
+    color: #000000;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background-color: #123325;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #c3ccc7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #002d18;
+}
+
+.testimonial-content {
+    margin-left: 60px;
+}
+
+.testimonial h4 {
+    margin-bottom: 10px;
+    color: #fbb901;
+}
+
+.testimonial p {
+    line-height: 1.6;
+}
+
+/* ---- Pricing ---- */
+.pricing {
+    padding: 80px 0;
+    background-color: #f8ecd6;
+}
+
+.pricing .section-title {
+    color: #002d18;
+    margin-bottom: 60px;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.featured {
+    border-color: #fbb901;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fbb901;
+    color: #002d18;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.pricing-header h3 {
+    font-size: 1.8rem;
+    color: #002d18;
+    margin-bottom: 20px;
+}
+
+.price .currency {
+    font-size: 1.2rem;
+    color: #666;
+    vertical-align: top;
+}
+
+.price .amount {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #002d18;
+}
+
+.price .period {
+    font-size: 1rem;
+    color: #666;
+}
+
+.savings {
+    background-color: #e8f5e8;
+    color: #2d5a2d;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.pricing-features {
+    margin: 30px 0;
+}
+
+.pricing-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-footer {
+    margin-top: 30px;
+}
+
+.pricing-footer .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+/* ---- Team Video ---- */
+.team-video {
+    padding: 80px 0;
+    background-color: #f8ecd6;
+}
+
+.team-video .section-title {
+    color: #002d18;
+    margin-bottom: 40px;
+}
+
+.team-video .video-container {
+    background-color: #ffffff;
+}
+
+/* ---- Contact ---- */
+.contact {
+    padding: 80px 0;
+    background-color: #002d18;
+    color: #ffffff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8ecd6;
+    color: #002d18;
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* ---- Footer ---- */
+footer {
+    background-color: #002d18;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #123325;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .video-container iframe {
+        height: 300px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-10px);
+    }
+
+    .team-video .video-container iframe {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-container iframe {
+        height: 250px;
+    }
+
+    .team-video .video-container iframe {
+        height: 250px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
