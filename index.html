@@ -3,10 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <link rel="icon" type="image/x-icon" href="Images/logo-icon.ico" />
+    <title>CertiWeb - Car Certification</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>¡Hola, mundo!</h1>
-<p>Este es un archivo index.html básico.</p>
+<!-- Sección Hero -->
+<section class="hero">
+    <video class="hero-bg" autoplay loop muted playsinline>
+        <source src="Videos/carro.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+    <div class="language-switch">
+        <button id="lang-switch-btn">
+            <span>English</span>
+        </button>
+    </div>
+    <div class="hero-content">
+        <img src="Images/logo.svg" alt="CertiWeb Logo" class="logo">
+        <h1 data-lang-es="Tu camino certificado hacia una venta de auto segura" data-lang-en="Your certified path to a safe car sale">Tu camino certificado hacia una venta de auto segura</h1>
+        <p data-lang-es="Deshágase del valor real de su vehículo con una certificación profesional. Venda más rápido, venda de forma más rentable." data-lang-en="Unlock the real value of your vehicle with a professional certification. Sell faster, sell more profitably.">Deshágase del valor real de su vehículo con una certificación profesional. Venda más rápido, venda de forma más rentable.</p>
+        <div class="btn-container">
+            <a href="https://certi-web-front.vercel.app/certiweb-frontend/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-lang-es="Regístrate" data-lang-en="Sign Up">Regístrate</a>
+            <a href="#contacto" class="btn btn-secondary" data-lang-es="Contacto" data-lang-en="Contact">Contacto</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Video Demostrativo -->
+<section class="demo-video" id="demo">
+    <div class="container">
+        <h2 class="section-title" data-lang-es="Conoce más sobre CertiWeb" data-lang-en="Learn more about CertiWeb">Conoce más sobre CertiWeb</h2>
+        <div class="video-container">
+            <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/VqvDliHQwvw?si=zTOeg8CKGBGgJ4ku"
+                    title="CertiWeb Demo Video"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <p class="video-description" data-lang-es="Descubre cómo CertiWeb puede ayudarte a certificar tu vehículo y venderlo con mayor confianza." data-lang-en="Discover how CertiWeb can help you certify your vehicle and sell it with greater confidence.">Descubre cómo CertiWeb puede ayudarte a certificar tu vehículo y venderlo con mayor confianza.</p>
+    </div>
+</section>
+
+<!-- Sección Why Us & About Us -->
+<section class="features-about-grid" id="features-about">
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-column" id="por-que">
+                <h2 class="section-title" data-lang-es="¿Por qué elegir Certiweb?" data-lang-en="Why choose Certiweb?">¿Por qué elegir Certiweb?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon" style="color: red;">✕</div>
+                        <div>
+                            <p data-lang-es="No somos intermediarios: No compramos ni vendemos autos, solo certificamos su estado." data-lang-en="We are not intermediaries: We do not buy or sell cars, we only certify their condition.">No somos intermediarios: No compramos ni vendemos autos, solo certificamos su estado.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔍</div>
+                        <div>
+                            <p>Inspección exhaustiva: Revisamos más de 100 puntos en motor, carrocería y documentación.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📄</div>
+                        <div>
+                            <p data-lang-es="Informe detallado: Incluye fotos, diagnóstico mecánico y un precio sugerido basado en el mercado." data-lang-en="Detailed report: Includes photos, mechanical diagnosis, and a suggested market-based price.">Informe detallado: Incluye fotos, diagnóstico mecánico y un precio sugerido basado en el mercado.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon" style="color: green;">✓</div>
+                        <div>
+                            <p data-lang-es="Aumenta la confianza del comprador: Con nuestro sello, el auto tiene más credibilidad y se vende más rápido." data-lang-en="Increases buyer confidence: With our seal, the car has more credibility and sells faster.">Aumenta la confianza del comprador: Con nuestro sello, el auto tiene más credibilidad y se vende más rápido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-column" id="sobre-nosotros">
+                <h2 class="section-title" data-lang-es="Sobre nosotros" data-lang-en="About Us">Sobre nosotros</h2>
+                <div class="about-content">
+                    <div class="about-icon">
+                        <img class="scq-img" src="Images/raw2-min.png" alt="Icono Selling Cars Quickly">
+                    </div>
+                    <p data-lang-es="Somos un servicio técnico especializado en <br>certificar la calidad de autos usados antes de su venta" data-lang-en="We are a technical service specialized in <br>certifying the quality of used cars before their sale">Somos un servicio técnico especializado en <br>certificar la calidad de autos usados antes de su venta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Reseñas -->
+<section class="reviews" id="resenas">
+    <div class="container">
+        <h2 class="section-title" data-lang-es="Reseñas" data-lang-en="Reviews">Reseñas</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <div class="testimonial-avatar">A</div>
+                <div class="testimonial-content">
+                    <h4 data-lang-es="Alberto Rodríguez" data-lang-en="Alberto Rodriguez">Alberto Rodríguez</h4>
+                    <p data-lang-es='"Gracias a la certificación de CertiWeb pude vender mi auto en menos de una semana. El comprador valoró mucho el informe detallado y la transparencia."' data-lang-en='"Thanks to CertiWebs certification, I was able to sell my car in less than a week. The buyer really valued the detailed report and transparency."'>"Gracias a la certificación de CertiWeb pude vender mi auto en menos de una semana. El comprador valoró mucho el informe detallado y la transparencia."</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-avatar">M</div>
+                <div class="testimonial-content">
+                    <h4 data-lang-es="María González" data-lang-en="Maria Gonzalez">María González</h4>
+                    <p data-lang-es='"Excelente servicio. Los técnicos fueron muy profesionales y detallistas. El informe me ayudó a negociar un mejor precio para mi vehículo."' data-lang-en='"Excellent service. The technicians were very professional and detail-oriented. The report helped me negotiate a better price for my vehicle."'>"Excelente servicio. Los técnicos fueron muy profesionales y detallistas. El informe me ayudó a negociar un mejor precio para mi vehículo."</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-avatar">J</div>
+                <div class="testimonial-content">
+                    <h4 data-lang-es="Juan Pérez" data-lang-en="Juan Perez">Juan Pérez</h4>
+                    <p data-lang-es='"Recomiendo CertiWeb a todos los que quieran vender su auto con confianza. El proceso fue rápido y el certificado me dio una ventaja competitiva frente a otros vendedores."' data-lang-en='"I recommend CertiWeb to anyone who wants to sell their car with confidence. The process was fast, and the certificate gave me a competitive advantage over other sellers."'>"Recomiendo CertiWeb a todos los que quieran vender su auto con confianza. El proceso fue rápido y el certificado me dio una ventaja competitiva frente a otros vendedores."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Precios -->
+<section class="pricing" id="precios">
+    <div class="container">
+        <h2 class="section-title" data-lang-es="Nuestros Planes" data-lang-en="Our Plans">Nuestros Planes</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 data-lang-es="Free" data-lang-en="Free">Free</h3>
+                    <div class="price">
+                        <span class="currency">S/.</span>
+                        <span class="amount">0</span>
+                        <span class="period" data-lang-es="/mes" data-lang-en="/month">/mes</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li data-lang-es="✓ Acceso a información básica" data-lang-en="✓ Access to basic information">✓ Acceso a información básica</li>
+                        <li data-lang-es="✓ Navegación por la plataforma" data-lang-en="✓ Platform navigation">✓ Navegación por la plataforma</li>
+                        <li data-lang-es="✓ Consulta de precios de referencia" data-lang-en="✓ Reference price consultation">✓ Consulta de precios de referencia</li>
+                    </ul>
+                </div>
+                <div class="pricing-footer">
+                    <a href="https://certi-web-front.vercel.app/certiweb-frontend/" class="btn btn-secondary" data-lang-es="Comenzar Gratis" data-lang-en="Start Free">Comenzar Gratis</a>
+                </div>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="pricing-badge" data-lang-es="Más Popular" data-lang-en="Most Popular">Más Popular</div>
+                <div class="pricing-header">
+                    <h3 data-lang-es="Mensual" data-lang-en="Monthly">Mensual</h3>
+                    <div class="price">
+                        <span class="currency">S/.</span>
+                        <span class="amount">50</span>
+                        <span class="period" data-lang-es="/mes" data-lang-en="/month">/mes</span>
+                    </div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li data-lang-es="✓ Certificación completa del vehículo" data-lang-en="✓ Complete vehicle certification">✓ Certificación completa del vehículo</li>
+                        <li data-lang-es="✓ Informe detallado con fotos" data-lang-en="✓ Detailed report with photos">✓ Informe detallado con fotos</li>
+                        <li data-lang-es="✓ Diagnóstico mecánico profesional" data-lang-en="✓ Professional mechanical diagnosis">✓ Diagnóstico mecánico profesional</li>
+                        <li data-lang-es="✓ Precio sugerido de mercado" data-lang-en="✓ Suggested market price">✓ Precio sugerido de mercado</li>
+                        <li data-lang-es="✓ Soporte técnico" data-lang-en="✓ Technical support">✓ Soporte técnico</li>
+                    </ul>
+                </div>
+                <div class="pricing-footer">
+                    <a href="https://certi-web-front.vercel.app/certiweb-frontend/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-lang-es="Elegir Plan" data-lang-en="Choose Plan">Elegir Plan</a>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 data-lang-es="Anual" data-lang-en="Annual">Anual</h3>
+                    <div class="price">
+                        <span class="currency">S/.</span>
+                        <span class="amount">250</span>
+                        <span class="period" data-lang-es="/año" data-lang-en="/year">/año</span>
+                    </div>
+                    <div class="savings" data-lang-es="Ahorra S/.350" data-lang-en="Save S/.350">Ahorra S/.350</div>
+                </div>
+                <div class="pricing-features">
+                    <ul>
+                        <li data-lang-es="✓ Todo lo del plan mensual" data-lang-en="✓ Everything in monthly plan">✓ Todo lo del plan mensual</li>
+                        <li data-lang-es="✓ Certificaciones ilimitadas" data-lang-en="✓ Unlimited certifications">✓ Certificaciones ilimitadas</li>
+                        <li data-lang-es="✓ Soporte prioritario 24/7" data-lang-en="✓ Priority 24/7 support">✓ Soporte prioritario 24/7</li>
+                        <li data-lang-es="✓ Reportes históricos" data-lang-en="✓ Historical reports">✓ Reportes históricos</li>
+                        <li data-lang-es="✓ Descuentos en servicios adicionales" data-lang-en="✓ Discounts on additional services">✓ Descuentos en servicios adicionales</li>
+                    </ul>
+                </div>
+                <div class="pricing-footer">
+                    <a href="https://certi-web-front.vercel.app/certiweb-frontend/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-lang-es="Elegir Plan" data-lang-en="Choose Plan">Elegir Plan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Video del Equipo -->
+<section class="team-video" id="equipo">
+    <div class="container">
+        <h2 class="section-title" data-lang-es="Conoce a nuestro equipo" data-lang-en="Meet our team">Conoce a nuestro equipo</h2>
+        <div class="video-container">
+            <iframe
+                    src="  "
+                    width="100%"
+                    height="400"
+                    frameborder="0"
+                    allowfullscreen
+                    title="CertiWeb Team Video">
+            </iframe>
+        </div>
+        <p class="video-description" data-lang-es="Descubre quiénes somos y cómo trabajamos para brindarte el mejor servicio de certificación vehicular." data-lang-en="Discover who we are and how we work to provide you with the best vehicle certification service.">Descubre quiénes somos y cómo trabajamos para brindarte el mejor servicio de certificación vehicular.</p>
+    </div>
+</section>
+
+<!-- Sección Contacto -->
+<section class="contact" id="contacto">
+    <div class="container">
+        <h2 class="section-title-contact" data-lang-es="Contacto" data-lang-en="Contact">Contacto</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre completo" data-lang-placeholder-es="Nombre completo" data-lang-placeholder-en="Full Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Correo electrónico" data-lang-placeholder-es="Correo electrónico" data-lang-placeholder-en="Email Address" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Mensaje" data-lang-placeholder-es="Mensaje" data-lang-placeholder-en="Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-lang-es="Enviar mensaje" data-lang-en="Send Message">Enviar mensaje</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p data-lang-es="Selling Cars Quickly © 2025 CertiWeb" data-lang-en="Selling Cars Quickly © 2025 CertiWeb">Selling Cars Quickly © 2025 CertiWeb</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
